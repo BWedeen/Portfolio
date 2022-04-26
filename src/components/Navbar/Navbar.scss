@@ -1,0 +1,246 @@
+.app__navbar {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rdba(255,255,255,0.18);
+    position: fixed;
+    z-index: 12;
+
+    animation: fadeInDown;
+    animation-duration: 1s;
+}   
+
+.app__navbar-namelogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    animation: fadeInDown;
+    animation-duration: 3s;
+    
+    img {
+        width: 50px;
+    }
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    list-style: none;
+
+    li {
+        margin: 0 1.5rem;
+        cursor: pointer;
+
+        flex-direction: column;
+
+        div {
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            border-radius: 50%;
+
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--white-color);
+            text-decoration: none;
+            flex-direction: column;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.84);
+            text-transform: uppercase;
+            font-weight: 500;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+
+        }
+
+        &:hover{
+            div {
+                background: var(--secondary-color);
+            }
+        }
+
+        &:nth-of-type(1) {
+            animation: fadeInDown;
+            animation-duration: 2s;
+        }
+
+        &:nth-of-type(2) {
+            animation: fadeInDown;
+            animation-duration: 2.5s;
+        }
+
+        &:nth-of-type(3) {
+            animation: fadeInDown;
+            animation-duration: 3s;
+        }
+
+        &:nth-of-type(4) {
+            animation: fadeInDown;
+            animation-duration: 3.5s;
+        }
+
+        &:nth-of-type(5) {
+            animation: fadeInDown;
+            animation-duration: 4s;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+    
+}
+
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 66, 255);
+
+    svg {
+        width: 70%;
+        height: 70%;
+        color: var(--secondary-color);
+    }
+
+    div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 11;
+
+        padding: 1rem;
+
+        width: 80%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        flex-direction: column;
+
+        background: url('../../assets/bgWhite.png');
+        background-color: rgba(35, 13, 65, 0.951);
+        background-size: cover;
+        background-repeat: repeat;
+        
+        box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+
+        svg {
+            width: 35px;
+            height: 35px;
+            color: var(--white-color);
+            margin: 0.5rem 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            li {
+                margin: 1rem;
+
+                a {
+                    color: var(--white-color);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+
+                    transition: all 0.3x ease-in-out;
+                    &:active {
+                        div {
+                            background: var(--secondary-color);
+                        }
+                    }
+                    
+                    &:hover {
+                        div {
+                            background: var(--secondary-color);
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}
+
+.socialIcon-container { 
+
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+@keyframes color {
+    0%   { color: rgb(123, 66, 255); }
+    20%  { color: #8b3dffd6; }
+    40%  { color: #4b9cff; }
+    50%  { color: #8b3dffd6; }
+    80%  { color: #5898ff; }
+    100% { color: rgb(123, 66, 255); }
+  }
+
+.socialIcon {
+    transition: 0.3s ease;
+    color: var(--secondary-color);
+    border-radius: 50px;
+    padding: 12px;
+
+    &:hover {     
+        background-color: rgb(148, 148, 255);
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+
+    &:nth-of-type(1) {
+        animation: fadeInDown;
+        animation-duration: 2.5s;
+        
+    }
+
+    &:nth-of-type(2) {
+        animation: fadeInDown;
+        animation-duration: 1s;
+    }
+
+}
