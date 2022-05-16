@@ -8,6 +8,14 @@ import './Navbar.scss';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
+  const handleLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/benjaminwedeen540/")
+  }
+
+  const handleGitHub = () => {
+    window.open("https://github.com/BWedeen")
+  }
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-namelogo">
@@ -25,10 +33,10 @@ const Navbar = () => {
       </ul> 
       
       <div className = "socialIcon-container">
-        <div className = "socialIcon" href="https://linkedin.com">
+        <div className = "socialIcon" onClick={handleLinkedIn} href="https://linkedin.com">
           <AiFillLinkedin size = "2.5rem"/>
         </div>
-        <div className = "socialIcon" href="https://github.com">
+        <div className = "socialIcon" onClick={handleGitHub} href="https://github.com">
           <AiFillGithub size = "2.5rem"/>
         </div>
       </div> 

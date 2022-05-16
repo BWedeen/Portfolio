@@ -40,7 +40,6 @@ import nb from '../assets/nb.png';
 import spotify from '../assets/spotify.png';
 
 export default {
-  
   stars,
   mountainsBack,
   mountainsFront,
