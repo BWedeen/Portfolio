@@ -1,0 +1,39 @@
+.app__work {
+    position: relative;
+    padding: 120px;
+    background: linear-gradient(rgb(51, 12, 90), rgb(41, 5, 99));
+    padding-bottom: 8rem;
+
+    .app__work-text{
+        width: 50%;
+        padding-left: 4rem;
+    }
+
+    h1{
+        z-index:15;
+        color: rgb(251, 251, 251);
+        font-size: 90px;
+        margin-bottom: 3rem;
+        width: 90%;
+        
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore'; 
+            font-size: 30px;
+            position: absolute;
+            margin-top: -21px;
+            left: 9rem;
+            opacity: 0.6;
+        }
+
+        &::after{
+            content: '<h1>';
+            font-family: 'La Belle Aurore'; 
+            font-size: 30px;
+            position: absolute;
+            margin-top: 100px;
+            left: 9rem;
+            opacity: 0.6;
+        }
+    }
+}

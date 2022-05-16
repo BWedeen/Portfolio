@@ -10,7 +10,7 @@
     align-items: center;
     overflow: hidden;
 
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     background: linear-gradient(rgb(5, 3, 33),rgb(143, 23, 255));
     img {
         position: absolute;
@@ -37,7 +37,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background: linear-gradient(to top, rgb(5, 3, 33), transparent);
     z-index: 11;
 }

@@ -23,7 +23,7 @@ const About = () => {
           Thank you for taking the time to check out my portfolio. Feel free to contact me with any questions about myself or any of my work! 
           If you haven't yet viewed my formal resume, please feel free to do so by clicking the button below!  
         </p>
-        <button>VIEW RESUME</button>
+        <div className='button-resume'>VIEW RESUME</div>
       </div>
 
       <div className='stage-cube-cont'>
