@@ -2,15 +2,15 @@
 
 
 ::-webkit-scrollbar {
-  width: 0.8rem;
-  background-color: black;
+  width: 1rem;
+  background-color: rgb(24, 24, 24);
   &-thumb {
-    background-color: rgba(84, 93, 199, 0.374)
+    background-color: rgba(64, 9, 123, 0.766)
   }
 }
 
 .app {
-    background: rgb(5, 3, 33);
+    background: rgb(35, 0, 67);
     font-family: var(--font-base);
     min-height: 100vh;
 

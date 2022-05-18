@@ -1,9 +1,10 @@
 .app__work {
     position: relative;
     padding: 120px;
-    background: linear-gradient(rgb(51, 12, 90), rgb(41, 5, 99));
+    background: linear-gradient(rgb(69, 15, 123), rgb(11, 2, 26));
     padding-bottom: 8rem;
-
+    overflow: hidden;
+    min-height: 1400px;
     .app__work-text{
         width: 50%;
         padding-left: 4rem;
@@ -22,7 +23,7 @@
             font-size: 30px;
             position: absolute;
             margin-top: -21px;
-            left: 9rem;
+            left: -2rem;
             opacity: 0.6;
         }
 
@@ -32,8 +33,46 @@
             font-size: 30px;
             position: absolute;
             margin-top: 100px;
-            left: 9rem;
+            left: -2rem;
             opacity: 0.6;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .app__work {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        min-height: 1100px;
+        .app__work-text{
+            padding-left: 2rem;
+            margin-bottom: 0px;
+            width: 100%
+        }
+    
+        h1{
+            transform: translateY(90px);
+            font-size: 40px;
+            margin-bottom: 0px;
+            
+            &::before{
+                font-size: 20px;
+                margin-top: -30px;
+                left: -1.1rem;
+            }
+    
+            &::after{
+                font-size: 20px;
+                margin-top: 52px;
+                left: -1.1rem;
+            }
+        }
+    
+        p {
+            margin-top: 40px;
+            font-size: 13px;
+            line-height: 30px;
         }
     }
 }

@@ -10,7 +10,7 @@
     align-items: center;
     overflow: hidden;
 
-    margin-bottom: 40px;
+    
     background: linear-gradient(rgb(5, 3, 33),rgb(143, 23, 255));
     img {
         position: absolute;
@@ -37,7 +37,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     background: linear-gradient(to top, rgb(5, 3, 33), transparent);
     z-index: 11;
 }
@@ -68,7 +68,7 @@
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.493);
     z-index: 3;
     animation: fadeInDown;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
 
     margin-bottom: 300px;
 
@@ -107,7 +107,7 @@
 .button {
   margin-top: 50px;
   animation: fadeInDown;
-  animation-duration: 1s;
+  animation-duration: 0.4s;
   z-index: 3;
   align-items: center;
   background-color: #FCFCFD;
