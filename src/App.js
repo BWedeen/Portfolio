@@ -8,6 +8,7 @@ import { Navbar } from './components';
 const App = () => {
   return (
     <div className="app">
+      <div class="cursor"></div>
       <Navbar/>
       <Header />
       <About />

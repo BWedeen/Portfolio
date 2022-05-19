@@ -21,7 +21,7 @@ const About = () => {
   const animationArrow = useAnimation();
 
   useEffect (() => {
-    console.log("use eff hook inView = ", inView)
+    console.log("About Page InView = ", inView)
     if(inView) {
       animationHeader.start({
         x: 0,
@@ -62,7 +62,7 @@ const About = () => {
         y: 0,
         opacity: 1,
         transition: {
-          duration: 1, delay: 3, delay: 0.6
+          duration: 0.4, delay: 0.95
         }
       });
     }
@@ -104,10 +104,10 @@ const About = () => {
       });
 
       animationArrow.start({
-        y: '-10vw',
-        opacity: -0.1,
+        y: '-5vw',
+        opacity: 0,
         transition: {
-          duration: 1, delay: 0
+          duration: 0.3, delay: 0
         }
       });
     };
@@ -130,14 +130,14 @@ const About = () => {
           <motion.div 
           animate = {animationSubtext1}>
             <p>
-              Hello! My name is Ben Wedeen and I am a 22 year old studying computer science who likes making cool things. 
+              Hello! My name is Ben Wedeen and I am a 22 year old from Los Angeles, California with a bachelors degree in Computer Science from the University of Colorado, Boulder. 
             </p>
           </motion.div>
           <motion.div 
           animate = {animationSubtext2}>
             <p>
               I enjoy the challenge of creating intuitive & useful applications using the newest tools and technology, and am currently applying to become a software developer at a well established company. 
-              I coded this portfolio to showcase my favorite projects to potential employers.
+              I coded this portfolio to showcase my favorite projects as well as my passion for creating interesting software.
             </p>
           </motion.div>
           <motion.div 
