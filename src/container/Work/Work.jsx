@@ -14,7 +14,7 @@ import './Work.scss';
 const Work = () => {
 
   const {ref, inView} = useInView({
-    threshold: 0.2
+    threshold: 0.23
   });
 
   const animationHeader = useAnimation();

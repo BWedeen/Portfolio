@@ -294,3 +294,10 @@
         margin-top: 2rem;
     }
 }
+
+@media screen and (min-width: 2000px){
+    .stage-cube-cont {
+        transform: scale(140%);
+        margin-top: -130px;
+    }
+}
