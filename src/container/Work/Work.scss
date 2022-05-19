@@ -1,5 +1,5 @@
 .app__work {
-    position: relative;
+    
     padding: 120px;
     background: linear-gradient(rgb(69, 15, 123), rgb(11, 2, 26));
     padding-bottom: 8rem;
@@ -14,7 +14,7 @@
         z-index:15;
         color: rgb(251, 251, 251);
         font-size: 90px;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         width: 90%;
         
         &::before{
@@ -47,28 +47,39 @@
     padding-top: 60px;
 }
 
+.work__item-text {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
 .work__item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: linear-gradient(rgb(60, 25, 98),rgb(55, 16, 98));
     padding: 1.3rem;
     border-radius: 1.2rem;
-    
     border: 3px solid transparent;
     border-color: rgba(243, 243, 243, 0.833);
     transition: all 0.2s ease-in-out;
     img{
         border-radius: 1.2rem;
         border-color: rgba(213, 213, 213, 0.833);
+        max-width: 100%;
     }
 
     h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
         color: white;
+        
     }
 
     p {
         padding-top: 10px;
         color: rgb(212, 212, 212);
+        
     }
 
     a {
@@ -101,6 +112,7 @@
         white-space: nowrap;
         will-change: box-shadow,transform;
         font-size: 15px;
+        margin-bottom: 10px;
     }
     
     a:focus {
@@ -120,15 +132,13 @@
     &:hover {
         box-shadow: 10px 10px rgba(213, 213, 213, 0.833);
         border-color: rgb(255, 255, 255);
-
+        transform: translateY(6px);
+        transform: scale(102%);
+        transition: all 0.2s ease-in-out;
         p {
             color: rgb(255, 255, 255);
         }
     }
-}
-
-.work__item-text {
-    padding-left: 30px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -138,7 +148,6 @@
         flex-direction: column;
         min-height: 1100px;
         .app__work-text{
-            padding-left: 2rem;
             margin-bottom: 0px;
             width: 100%
         }
@@ -172,12 +181,22 @@
         margin-top: 100px;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
+        overflow: visible;
 
         .work__item-text {
             flex-direction: column;
             padding-left: 30px;
             flex-direction: row;
         }
+    }
+}
+
+img{
+    text-align: center;
+}
+
+@media screen and (min-width: 2000px){
+    .app__work__container {
+        max-width:2050px;
     }
 }
