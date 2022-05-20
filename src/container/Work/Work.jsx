@@ -24,7 +24,6 @@ const Work = () => {
   const animationProject4 = useAnimation();
 
   useEffect (() => {
-    console.log("use eff hook inView = ", inView)
     if(inView) {
       animationHeader.start({
         x: 0,
@@ -160,16 +159,15 @@ const Work = () => {
               <img src={ProjectImage4} alt=""/>
             </div>
             <div className="work__item-text">
-              <h2>Covid Simulator</h2>
-              <p>Collatz is a travel recommendation web app that gives users attractions, hotels, flights - and more - based on a desired location, set budget and other user specifications.</p>
-              <p>The frontend of Collatz was built to be fully responsive using React, while the backend relied on Python scripts and several different REST APIs.</p>
+              <h2>Covid Simulation</h2>
+              <p>This project works to simulate the spread of COVID, simulating a set number of agents representing individuals and having them go back and fourth between a list of set destinations</p>
+              <p>The behavior of agents changes depending upon whether they are infected with symptoms, along with several other factors depending on the agent's socioeconomic status. Made in Python. </p>
               <a href="" className="btn" target="_blank">View Code</a>
             </div>
           </article>
         </motion.div>
       </div>
     </div>
-    
   )
 }
 

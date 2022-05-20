@@ -21,7 +21,6 @@ const About = () => {
   const animationArrow = useAnimation();
 
   useEffect (() => {
-    console.log("About Page InView = ", inView)
     if(inView) {
       animationHeader.start({
         x: 0,
