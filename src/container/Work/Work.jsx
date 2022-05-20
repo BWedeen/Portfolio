@@ -5,16 +5,16 @@ import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 
 import ProjectImage1 from '../../assets/portfolio1.png';
-import ProjectImage2 from '../../assets/portfolio1.png';
+import ProjectImage2 from '../../assets/portfolio4.png';
 import ProjectImage3 from '../../assets/portfolio3.png';
-import ProjectImage4 from '../../assets/portfolio1.png';
+import ProjectImage4 from '../../assets/portfolio2.png';
 
 import './Work.scss';
 
 const Work = () => {
 
   const {ref, inView} = useInView({
-    threshold: 0.23
+    threshold: 0.21
   });
 
   const animationHeader = useAnimation();
@@ -132,8 +132,8 @@ const Work = () => {
             </div>
             <div className="work__item-text">
               <h2>412 Motorsport</h2>
-              <p>412 Motorsport is an autoshop based in Los Angeles, California. I befriended the owners of the shop, and ended up building them a new online shop for ecommerce.</p>
-              <p>The store was built and hosted using Shopify, written in Liquid & JavaScript. This is the first professional work I completed in my computer science career, and I still work on it today.</p>
+              <p>412 Motorsport is an autoshop based in Los Angeles, California. I became friends with the owner of the shop, and ended up building his business a new online shop for ecommerce.</p>
+              <p>The store was built and hosted using Shopify, written in Liquid & JavaScript. This website is still live and I work on it still work on it and update it occasionally.</p>
               <a href="https://412motorsport.com/" className="btn" target="_blank">View Site</a>
             </div>
           </article>
@@ -147,7 +147,7 @@ const Work = () => {
             <div className="work__item-text">
               <h2>Spotify Advanced Search </h2>
               <p>Spotify Advanced Search is a web app that allows users to generate songs based on song characteristics such as Acousticness, Energy, Valence - and more.</p>
-              <p>The frontend of Spotify Advanced Search was built using NodeJS and React with Spotify API, while the backend utilized a MongoDB database.</p>
+              <p>Spotify Advanced Search was built using React, Spotify API, NodeJS and utilized a MongoDB database set up by teammates to keep track of user information.</p>
               <a href="" className="btn" target="_blank">View Code</a>
             </div>
           </article>
@@ -159,9 +159,9 @@ const Work = () => {
               <img src={ProjectImage4} alt=""/>
             </div>
             <div className="work__item-text">
-              <h2>Covid Simulation</h2>
-              <p>This project works to simulate the spread of COVID, simulating a set number of agents representing individuals and having them go back and fourth between a list of set destinations</p>
-              <p>The behavior of agents changes depending upon whether they are infected with symptoms, along with several other factors depending on the agent's socioeconomic status. Made in Python. </p>
+              <h2>Covid Simulator</h2>
+              <p>This project builds on an existing virus outbreak simulation to simulate the spread of COVID, introducing new factors to simulate the introduction of COVID-19 into a small population.</p>
+              <p>This was done as a final research project for a class that handled the dynamic modelling of naturally occuring events. Made in Python with libraries such as Pandas, MatPlotLib and Mesa. </p>
               <a href="" className="btn" target="_blank">View Code</a>
             </div>
           </article>

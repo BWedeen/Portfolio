@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { About, Footer, Header, Skills, Work } from './container';
+import { Header, About, Work, Contact, Footer } from './container';
 import { Navbar } from './components';
 
 //Credit to upklyak for vector images
@@ -13,7 +13,7 @@ const App = () => {
       <Header />
       <About />
       <Work/>
-      <Skills />
+      <Contact />
       <Footer/>
     </div>
   );

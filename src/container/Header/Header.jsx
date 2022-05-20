@@ -19,7 +19,7 @@ const Header = () => {
   /*Animated text */
   const [letterClass2, setLetterClass2] = useState('text-animate')
   /*const nameLetterArray= ["I","'",'m','','','','','B','e','n','','','','', 'W','e','d','e','e','n']*/
-  const welcomeLetterArray= ["W","e",'l','c','o','m','e','','','t','o','','','m','y','','','p','o','r','t','f','o','l','i','o','!']
+  const welcomeLetterArray= ["F","u",'l','l','','','','S','t','a','c','k','','','','D','e','v','e','l','o','p','e','r']
  
   useEffect(() => {
     return setTimeout(() => {

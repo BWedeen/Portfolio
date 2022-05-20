@@ -1,0 +1,40 @@
+.app__contact-container {
+    overflow: hidden;
+    position: relative;
+    padding: 120px;
+    min-height: 1200px;
+
+    .app__contact-text {
+
+        padding-left: 4rem;
+
+        h1{
+            z-index:12;
+            color: rgb(251, 251, 251);
+            font-size: 90px;
+            margin-bottom: 3rem;
+            width: 90%;
+            
+            
+            &::before{
+                content: '<h1>';
+                font-family: 'La Belle Aurore'; 
+                font-size: 30px;
+                position: absolute;
+                margin-top: -21px;
+                left: -2rem;
+                opacity: 0.6;
+            }
+    
+            &::after{
+                content: '<h1>';
+                font-family: 'La Belle Aurore'; 
+                font-size: 30px;
+                position: absolute;
+                margin-top: 100px;
+                left: -2rem;
+                opacity: 0.6;
+            }
+        }
+    }
+}

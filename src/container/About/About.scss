@@ -3,6 +3,7 @@
     background: linear-gradient(rgb(5, 3, 33),rgb(35, 0, 67));
 }
 .app__about {
+    overflow: hidden;
     position: relative;
     padding: 120px;
     
@@ -13,7 +14,7 @@
     }
 
     h1{
-        z-index:15;
+        z-index:12;
         color: rgb(251, 251, 251);
         font-size: 90px;
         margin-bottom: 3rem;
@@ -250,7 +251,7 @@
         padding: 16px;
         display: flex;
         flex-direction: column;
-        min-height: 1100px;
+        min-height: 1200px;
         .app__about-text{
             padding-left: 2rem;
             margin-bottom: 0px;
@@ -258,6 +259,7 @@
         }
     
         h1{
+            padding-top: 100px;
             font-size: 40px;
             margin-bottom: 0px;
             

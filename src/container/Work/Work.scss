@@ -146,8 +146,9 @@
         padding: 16px;
         display: flex;
         flex-direction: column;
-        min-height: 1100px;
+        
         .app__work-text{
+            padding-left: 27px;
             margin-bottom: 0px;
             width: 100%
         }
@@ -171,7 +172,7 @@
         }
     
         p {
-            margin-top: 40px;
+            margin-top: 10px;
             font-size: 13px;
             line-height: 30px;
         }
@@ -185,7 +186,7 @@
 
         .work__item-text {
             flex-direction: column;
-            padding-left: 30px;
+            padding-left: 5px;
             flex-direction: row;
         }
     }

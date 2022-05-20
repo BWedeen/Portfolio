@@ -70,7 +70,7 @@ const About = () => {
       animationHeader.start({
         x: '-100vw',
         transition: {
-          type: 'spring', duration: 2
+          type: 'spring', duration: 1
         }
       });
       
@@ -84,21 +84,21 @@ const About = () => {
       animationSubtext2.start({
         x: '-100vw',
         transition: {
-          type: 'spring', duration: 2
+          type: 'spring', duration: 1
         }
       });
 
       animationSubtext3.start({
         x: '-100vw',
         transition: {
-          type: 'spring', duration: 2
+          type: 'spring', duration: 1
         }
       });
 
       animationButton.start({
         x: '-100vw',
         transition: {
-          type: 'spring', duration: 2
+          type: 'spring', duration: 1
         }
       });
 
@@ -129,13 +129,13 @@ const About = () => {
           <motion.div 
           animate = {animationSubtext1}>
             <p>
-              Hello! My name is Ben Wedeen and I am a 22 year old from Los Angeles, California with a bachelors degree in Computer Science from the University of Colorado, Boulder. 
+              Hello! My name is Ben Wedeen and I am a full stack developer from Los Angeles, California with a bachelors degree in Computer Science from the University of Colorado, Boulder. 
             </p>
           </motion.div>
           <motion.div 
           animate = {animationSubtext2}>
             <p>
-              I enjoy the challenge of creating intuitive & useful applications using the newest tools and technology, and am currently applying to become a software developer at a well established company. 
+              I enjoy the challenge of creating intuitive & useful applications with the newest tools and technology. 
               I coded this portfolio to showcase my favorite projects as well as my passion for creating interesting software.
             </p>
           </motion.div>
