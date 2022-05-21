@@ -1,6 +1,6 @@
 .app__about-container {
     flex-direction: column;
-    background: linear-gradient(rgb(5, 3, 33),rgb(35, 0, 67));
+    background: linear-gradient(#050321,#230043);
 }
 .app__about {
     overflow: hidden;
@@ -253,15 +253,13 @@
         flex-direction: column;
         min-height: 1200px;
         .app__about-text{
-            padding-left: 2rem;
-            margin-bottom: 0px;
+            padding-left: 2rem;;
             width: 100%
         }
     
         h1{
             padding-top: 100px;
             font-size: 40px;
-            margin-bottom: 0px;
             
             &::before{
                 font-size: 20px;

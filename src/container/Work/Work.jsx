@@ -14,7 +14,7 @@ import './Work.scss';
 const Work = () => {
 
   const {ref, inView} = useInView({
-    threshold: 0.21
+    threshold: 0.16
   });
 
   const animationHeader = useAnimation();
@@ -73,14 +73,14 @@ const Work = () => {
           y: '100vw',
           opacity: 0,
           transition: {
-            type: 'spring', duration: 1.3, bounce: 0.23, delay: 0.2
+            type: 'spring', duration: 1.5, bounce: 0.23, delay: 0.2
           }
         });
         animationProject2.start({
           y: '100vw',
           opacity: 0,
           transition: {
-            type: 'spring', duration: 1.3, bounce: 0.23, delay: 0.2
+            type: 'spring', duration: 1.5, bounce: 0.23, delay: 0.2
           }
         });
         animationProject3.start({

@@ -32,18 +32,14 @@ import about04 from '../assets/about04.png';
 import circle from '../assets/circle.svg';
 import nameLogo from '../assets/nameLogo.png';
 
-import adidas from '../assets/adidas.png';
-import amazon from '../assets/amazon.png';
-import asus from '../assets/asus.png';
-import bolt from '../assets/bolt.png';
-import nb from '../assets/nb.png';
-import spotify from '../assets/spotify.png';
+import webDesign from '../assets/web-design.png';
 
 export default {
   stars,
   mountainsBack,
   mountainsFront,
   moon,
+  webDesign,
   email,
   mobile,
   api,
@@ -69,10 +65,4 @@ export default {
   about04,
   circle,
   nameLogo,
-  adidas,
-  amazon,
-  asus,
-  bolt,
-  nb,
-  spotify,
 };

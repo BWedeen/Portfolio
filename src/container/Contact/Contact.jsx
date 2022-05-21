@@ -35,7 +35,7 @@ const Contact = () => {
   }, [inView]);
 
   return (
-    <div className="app__contact-container">
+    <div className="app__contact-container" id='contact'>
       <div ref = {ref} className='app__contact-text'>
         <motion.div 
         animate = {animationHeader}> 
