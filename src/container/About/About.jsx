@@ -180,7 +180,7 @@ const About = () => {
 
       <motion.div 
       animate= {animationArrow}>
-         <a href="#work" class="arrow-container">
+         <a href="#work" class="arrow-container" alt="Go to work section">
           <div class="arrow"></div>
           <div class="arrow"></div>
           <div class="arrow"></div>  

@@ -4,10 +4,7 @@ import {animate, motion} from 'framer-motion';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 
-import ProjectImage1 from '../../assets/portfolio1.png';
-import ProjectImage2 from '../../assets/portfolio4.png';
-import ProjectImage3 from '../../assets/portfolio3.png';
-import ProjectImage4 from '../../assets/portfolio2.png';
+import { images } from '../../constants'
 
 import './Work.scss';
 
@@ -114,7 +111,7 @@ const Work = () => {
         animate = {animationProject1}>
           <article className='work__item'>
             <div className="work__item-image">
-              <img src={ProjectImage1} alt=""/>
+              <img src={images.ProjectImage1} alt="Collatz homepage"/>
             </div>
             <div className="work__item-text">
               <h2>Collatz</h2>
@@ -128,7 +125,7 @@ const Work = () => {
         animate = {animationProject2}>
           <article className='work__item'>
             <div className="work__item-image">
-              <img src={ProjectImage3} alt=""/>
+              <img src={images.ProjectImage3} alt="412 Motorsport homepage"/>
             </div>
             <div className="work__item-text">
               <h2>412 Motorsport</h2>
@@ -142,7 +139,7 @@ const Work = () => {
         animate = {animationProject3}>
           <article className='work__item'>
             <div className="work__item-image">
-              <img src={ProjectImage2} alt=""/>
+              <img src={images.ProjectImage4} alt="Spotify Advanced Search homepage"/>
             </div>
             <div className="work__item-text">
               <h2>Spotify Advanced Search </h2>
@@ -156,7 +153,7 @@ const Work = () => {
         animate = {animationProject4}>
           <article className='work__item'>
             <div className="work__item-image">
-              <img src={ProjectImage4} alt=""/>
+              <img src={images.ProjectImage2} alt="Covid Simulator graphs"/>
             </div>
             <div className="work__item-text">
               <h2>Covid Simulator</h2>

@@ -104,10 +104,10 @@ const Skills = () => {
               <p>- Sass</p>
             </div>
             <div className='skills__item-image'>
-              <img src={images.javascript}/>
-              <img src={images.react}/>
-              <img src={images.html}/>
-              <img src={images.css}/>
+              <img src={images.javascript} alt="Javascript Logo"/>
+              <img src={images.react} alt="React Logo"/>
+              <img src={images.html} alt="Html Logo"/>
+              <img src={images.css} alt="Css Logo"/>
             </div>
           </article>
         </motion.div>
@@ -124,10 +124,10 @@ const Skills = () => {
               <p>- MongoDB</p>
             </div>
             <div className='skills__item-image'>
-              <img src={images.python}/>
-              <img src={images.javascript}/>
-              <img src={images.html}/>
-              <img src={images.css}/>
+              <img src={images.python} alt="Python Logo"/>
+              <img src={images.javascript} alt="Java Logo"/>
+              <img src={images.cpp} alt="C++ Logo"/>
+              <img src={images.css} alt="MongoDB Logo"/>
             </div>
           </article>
         </motion.div>
@@ -141,10 +141,10 @@ const Skills = () => {
               <p>- Agile</p>
             </div>
             <div className='skills__item-image'>
-              <img src={images.git}/>
-              <img src={images.react}/>
-              <img src={images.html}/>
-              <img src={images.css}/>
+              <img src={images.git} alt="Git Logo"/>
+              <img src={images.react} alt="Github Logo"/>
+              <img src={images.html} alt="Agile Logo"/>
+              <img src={images.css} alt=""/>
             </div>
           </article>
         </motion.div>
