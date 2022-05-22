@@ -1,6 +1,6 @@
 import React from 'react'
 import {useInView} from 'react-intersection-observer';
-import {animate, motion} from 'framer-motion'; 
+import { motion} from 'framer-motion'; 
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 
@@ -19,6 +19,7 @@ const Work = () => {
   const animationProject2 = useAnimation();
   const animationProject3 = useAnimation();
   const animationProject4 = useAnimation();
+  const animationArrow = useAnimation();
 
   useEffect (() => {
     if(inView) {
@@ -55,6 +56,13 @@ const Work = () => {
         opacity: 1,
         transition: {
           type: 'spring', duration: 1.3, bounce: 0.23, delay: 0.5
+        }
+      });
+      animationArrow.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.4, delay: 0.95
         }
       });
     }
@@ -94,8 +102,15 @@ const Work = () => {
             type: 'spring', duration: 1.3, bounce: 0.23, delay: 0.2
           }
         });
+        animationArrow.start({
+          y: '-5vw',
+          opacity: 0,
+          transition: {
+            duration: 0.3, delay: 0
+          }
+        });
     };
-  }, [inView]);
+  }, [inView, animationHeader, animationProject1, animationProject2, animationProject3, animationProject4, animationArrow]);
 
 
   return (
@@ -117,7 +132,7 @@ const Work = () => {
               <h2>Collatz</h2>
               <p>Collatz is a travel recommendation web app that gives users attractions, hotels, flights and more - based on a desired location, set budget and other user specifications.</p>
               <p>I built the frontend with React, using Google API for tracking users. The backend was written by a team of graduate students in Python, utilitizing several REST APIs to gather data.</p>
-              <a href="" className="btn" target="_blank">View Code</a>
+              <a href="https://github.com/CUBigDataClass/Collatz" className="btn" target="_blank">View Code</a>
             </div>
           </article>
         </motion.div>
@@ -164,6 +179,17 @@ const Work = () => {
           </article>
         </motion.div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <motion.div 
+      animate= {animationArrow}>
+        <a href="#skills" class="arrow-container" alt="Go to skills section">
+          <div class="arrow"></div>
+          <div class="arrow"></div>
+          <div class="arrow"></div>  
+        </a>
+      </motion.div> 
     </div>
   )
 }

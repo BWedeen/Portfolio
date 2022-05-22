@@ -8,9 +8,12 @@ import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
 import git from '../assets/git.png';
-
+import mongodb from '../assets/mongodb.png';
+import gitHub from '../assets/gitHub.png';
+import agileScrum from '../assets/agilescrum.png'
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
+import java from '../assets/java.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
@@ -32,11 +35,15 @@ export default {
   css,
   cpp,
   figma,
+  gitHub,
   git,
+  agileScrum,
   html,
   javascript,
+  java,
   node,
   python,
+  mongodb,
   react,
   sass,
   nameLogo,

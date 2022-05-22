@@ -1,7 +1,7 @@
 import React from 'react'
-import { faCss3, faGitAlt, faJava, faJsSquare, faPython, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGitAlt, faJava, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {animate, motion} from 'framer-motion'; 
+import {motion} from 'framer-motion'; 
 import {useInView} from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
@@ -13,6 +13,7 @@ const About = () => {
   const {ref, inView} = useInView({
     threshold: 0.2
   });
+
   const animationHeader = useAnimation();
   const animationSubtext1 = useAnimation();
   const animationSubtext2 = useAnimation();
@@ -110,7 +111,7 @@ const About = () => {
         }
       });
     };
-  }, [inView]);
+  }, [inView, animationHeader, animationSubtext1, animationSubtext2, animationSubtext3, animationButton, animationArrow]);
 
   const handleResume = () => {
     window.open("https://i.imgur.com/sL9RnNU.png")
@@ -177,10 +178,9 @@ const About = () => {
           </div>
         </div>
       </div>  
-
       <motion.div 
       animate= {animationArrow}>
-         <a href="#work" class="arrow-container" alt="Go to work section">
+        <a href="#work" class="arrow-container" alt="Go to work section">
           <div class="arrow"></div>
           <div class="arrow"></div>
           <div class="arrow"></div>  
