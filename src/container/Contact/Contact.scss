@@ -15,6 +15,10 @@
 
         padding-left: 4rem;
 
+        @media screen and (max-width: 1300px){
+            padding-left: 2rem;
+        }
+
         h1{
             z-index:12;
             color: rgb(255, 255, 255);
@@ -116,9 +120,9 @@
                         &:focus,
                         &:not(:placeholder-shown) {
                         & + .input__label {
-                            -webkit-transform: translate(0rem, -135%) scale(120%);
-                            -webkit-transform: -webkit-translate(0rem, -135%) scale(120%);
-                            -ms-transform: translate(0rem, -135%) scale(120%);
+                            -webkit-transform: translate3d(0rem, -135%, 0rem) scale(120%);
+                            -webkit-transform: -webkit-translate3d(0rem, -135%, 0rem) scale(120%);
+                            -ms-transform: translate3d(0rem, -135%) scale(120%, 0rem);
                             color: white;
                         }
                     }
@@ -164,9 +168,9 @@
                 &:focus,
                 &:not(:placeholder-shown) {
                 & + .textarea__label {
-                    -webkit-transform: translate(0rem, -135%) scale(120%);
-                    -webkit-transform: -webkit-translate(0rem, -135%) scale(120%);
-                    -ms-transform: translate(0rem, -135%) scale(120%);
+                    -webkit-transform: translate3d(0rem, -135%, 0rem) scale(120%);
+                    -webkit-transform: -webkit-translate3d(0rem, -135%, 0) scale(120%);
+                    -ms-transform: translate3d(0rem, -135%, 0) scale(120%);
                     color: white;
 
                 }
@@ -229,6 +233,7 @@ button:active {
 
 
 @media screen and (max-width: 1300px) {
+
     h1{
         transform: translateY(90px);
         font-size: 10px;
