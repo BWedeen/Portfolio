@@ -27,7 +27,7 @@
     }
 
     @media screen and (max-width: 900px) {
-        padding: 24rem 0rem;
+        padding: 30rem 0rem;
     }
     
 }
@@ -58,26 +58,6 @@
 }
 
 
-.text {
-    font-family: 'Press Start 2P', cursive;
-    transform: translateY(-160px);
-    position: absolute;
-    color: var(--white-color);
-    white-space: nowrap;
-    font-size: 50px;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.493);
-    z-index: 3;
-    animation: fadeInDown;
-    animation-duration: 0.4s;
-
-    margin-bottom: 300px;
-
-    @media screen and (max-width: 900px) {
-        font-size: 5.5vw;
-        margin-top: 120px;
-    }
-}
-
 .subtext {
     font-family: 'Press Start 2P', cursive;
     font-weight: 10;
@@ -87,11 +67,30 @@
     color: var(--white-color);
     white-space: nowrap;
     z-index: 3;
+    margin-top: 100px;
     margin-bottom: 80px;
 
     @media screen and (max-width: 900px) {
         margin-bottom: 13px;
         font-size: 13px;
+    }
+}
+
+.text {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    color: var(--white-color);
+    white-space: nowrap;
+    font-size: 50px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.493);
+    z-index: 3;
+    
+    margin-bottom: 300px;
+
+    @media screen and (max-width: 900px) {
+        margin-bottom: 300px;
+        font-size: 5.5vw;
+        
     }
 }
 
@@ -105,7 +104,7 @@
   }
 
 .button {
-  margin-top: 50px;
+  margin-top: 160px;
   animation: fadeInDown;
   animation-duration: 0.4s;
   z-index: 3;

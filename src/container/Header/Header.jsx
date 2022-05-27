@@ -31,32 +31,25 @@ const Header = () => {
     
     <div className="app__header-parallax" id='home'>
       <div className = 'stars'>
-        <img  src={images.stars} id="stars" alt="" 
-        style={{transform: `translateX(${offsetY * 0.20}px)`}}/>
+        <img  src={images.stars} id="stars" alt="" style={{transform: `translateX(${offsetY * 0.20}px)`}}/>
       </div>
       <div className='moon'>
-        <img src={images.moon} id="moon" alt="" 
-        style={{ transform: `translateY(${offsetY * 0.55}px)`}}/>
+        <img src={images.moon} id="moon" alt="" style={{ transform: `translateY(${offsetY * 0.55}px)`}}/>
       </div>
       <div className='mountains_back'>
-        <img src={images.mountainsBack} id="mountainsBack" alt="" 
-        style={{ transform: `translateY(${(offsetY * 0.40)-130}px)`}}/>
+        <img src={images.mountainsBack} id="mountainsBack" alt="" style={{ transform: `translateY(${(offsetY * 0.40)-130}px)`}}/>
       </div>
-      <h1 className="text" id="text" alt=""
-       style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}>
+      <h1 className="text" id="text" alt="" style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}>
           <AnimatedLetters letterClass={letterClass2}
           strArray={nameLetterArray}
           idx={1} />
       </h1>
-      <h2 className="subtext" id="subtext2"
-       style={{ transform: `translateY(${(offsetY * 0.80)-10}px)`}}>
+      <h2 className="subtext" id="subtext2" style={{ transform: `translateY(${(offsetY * 0.80)-10}px)`}}>
          <AnimatedLetters letterClass={letterClass2}
-          strArray={welcomeLetterArray}
+          strArray={welcomeLetterArray} 
           idx={1} />
       </h2>
-      <a href='#about' className="button"
-      style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}
-      >
+      <a href='#about' className="button" style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}>
         Continue
       </a>
       <div className='mountains_front'>

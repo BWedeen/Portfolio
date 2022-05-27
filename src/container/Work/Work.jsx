@@ -132,7 +132,7 @@ const Work = () => {
               <h2>Collatz</h2>
               <p>Collatz is a travel recommendation web app that gives users attractions, hotels, flights and more - based on a desired location, set budget and other user specifications.</p>
               <p>I built the frontend with React, using Google API for tracking users. The backend was written by a team of graduate students in Python, utilitizing several REST APIs to gather data.</p>
-              <a href="https://github.com/CUBigDataClass/Collatz" className="btn" target="_blank">View Code</a>
+              <a href="https://github.com/CUBigDataClass/Collatz" className="btn" target="_blank" rel="noreferrer">View Code</a>
             </div>
           </article>
         </motion.div>
@@ -146,7 +146,7 @@ const Work = () => {
               <h2>412 Motorsport</h2>
               <p>412 Motorsport is an autoshop based in Los Angeles, California. I became friends with the owner of the shop, and ended up building his business a new online shop for ecommerce.</p>
               <p>The store was built and hosted using Shopify, written in Liquid & JavaScript. This website is still live and I work on it still work on it and update it occasionally.</p>
-              <a href="https://412motorsport.com/" className="btn" target="_blank">View Site</a>
+              <a href="https://412motorsport.com/" className="btn" target="_blank" rel="noreferrer">View Site</a>
             </div>
           </article>
         </motion.div>
@@ -160,7 +160,7 @@ const Work = () => {
               <h2>Spotify Advanced Search </h2>
               <p>Spotify Advanced Search is a web app that allows users to generate songs based on song characteristics such as Acousticness, Energy, Valence - and more.</p>
               <p>Spotify Advanced Search was built using React, Spotify API, NodeJS and utilized a MongoDB database set up by teammates to keep track of user information.</p>
-              <a href="https://github.com/Larjun/Advanced-Spotify-Search" className="btn" target="_blank">View Code</a>
+              <a href="https://github.com/Larjun/Advanced-Spotify-Search" className="btn" target="_blank" rel="noreferrer">View Code</a>
             </div>
           </article>
         </motion.div>
@@ -174,7 +174,7 @@ const Work = () => {
               <h2>Covid Simulator</h2>
               <p>This project builds on an existing virus outbreak simulation to simulate the spread of COVID, introducing new factors to simulate the introduction of COVID-19 into a small population.</p>
               <p>This was done as a final research project for a class that handled the dynamic modelling of naturally occuring events. Made in Python with libraries such as Pandas, MatPlotLib and Mesa. </p>
-              <a href="https://github.com/BWedeen/COVID-Simulator" className="btn" target="_blank">View Code</a>
+              <a href="https://github.com/BWedeen/COVID-Simulator" className="btn" target="_blank" rel="noreferrer">View Code</a>
             </div>
           </article>
         </motion.div>
