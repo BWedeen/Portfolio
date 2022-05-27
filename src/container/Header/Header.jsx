@@ -18,7 +18,7 @@ const Header = () => {
 
   /*Animated text */
   const [letterClass2, setLetterClass2] = useState('text-animate')
-  /*const nameLetterArray= ["I","'",'m','','','','','B','e','n','','','','', 'W','e','d','e','e','n']*/
+  const nameLetterArray= ["I","'",'m','','','','','B','e','n','','','','', 'W','e','d','e','e','n']
   const welcomeLetterArray= ["F","u",'l','l','','','','S','t','a','c','k','','','','D','e','v','e','l','o','p','e','r']
  
   useEffect(() => {
@@ -44,7 +44,9 @@ const Header = () => {
       </div>
       <h1 className="text" id="text" alt=""
        style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}>
-          I'm Ben Wedeen
+          <AnimatedLetters letterClass={letterClass2}
+          strArray={nameLetterArray}
+          idx={1} />
       </h1>
       <h2 className="subtext" id="subtext2"
        style={{ transform: `translateY(${(offsetY * 0.80)-10}px)`}}>
