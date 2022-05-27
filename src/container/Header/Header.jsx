@@ -39,17 +39,17 @@ const Header = () => {
       <div className='mountains_back'>
         <img src={images.mountainsBack} id="mountainsBack" alt="" style={{ transform: `translateY(${(offsetY * 0.40)-130}px)`}}/>
       </div>
-      <h1 className="text" id="text" alt="" style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}>
+      <h1 className="text" id="text" alt="" >
           <AnimatedLetters letterClass={letterClass2}
           strArray={nameLetterArray}
           idx={1} />
       </h1>
-      <h2 className="subtext" id="subtext2" style={{ transform: `translateY(${(offsetY * 0.80)-10}px)`}}>
+      <h2 className="subtext" id="subtext2" >
          <AnimatedLetters letterClass={letterClass2}
           strArray={welcomeLetterArray} 
           idx={1} />
       </h2>
-      <a href='#about' className="button" style={{ transform: `translateY(${(offsetY * 0.80)}px)`}}>
+      <a href='#about' className="button" >
         Continue
       </a>
       <div className='mountains_front'>
