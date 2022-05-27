@@ -116,7 +116,8 @@
                         &:focus,
                         &:not(:placeholder-shown) {
                         & + .input__label {
-                            transform: translate(0rem, -135%) scale(120%);
+                            -webkit-transform: translate(0rem, -135%) scale(120%);
+                            -ms-transform: translate(0rem, -135%) scale(120%);
                             color: white;
                         }
                     }
@@ -162,7 +163,8 @@
                 &:focus,
                 &:not(:placeholder-shown) {
                 & + .textarea__label {
-                    transform: translate(0rem, -135%) scale(120%);
+                    -webkit-transform: translate(0rem, -135%) scale(120%);
+                    -ms-transform: translate(0rem, -135%) scale(120%);
                     color: white;
 
                 }
@@ -225,30 +227,30 @@ button:active {
 
 
 @media screen and (max-width: 1300px) {
+    h1{
+        transform: translateY(90px);
+        font-size: 10px;
+        
 
+        &::before{
+            font-size: 20px;
+            margin-top: -30px;
+            left: -1.1rem;
+        }
+
+        &::after{
+            font-size: 20px;
+            margin-top: 52px;
+            left: -1.1rem;
+        }
+    }
     .app__contact-container {
         padding: 16px;
         display: flex;
         flex-direction: column;
         min-height: 700px;
     
-        h1{
-            transform: translateY(90px);
-            font-size: 10px;
-            
-    
-            &::before{
-                font-size: 20px;
-                margin-top: -30px;
-                left: -1.1rem;
-            }
-    
-            &::after{
-                font-size: 20px;
-                margin-top: 52px;
-                left: -1.1rem;
-            }
-        }
+        
     
         p {
             margin-top: 10px;
@@ -264,58 +266,6 @@ button:active {
 
     button {
         width: 100%;
-    }
-
-    .textarea {
-        &__label {
-            position: absolute;
-        }
-
-        &__field {
-            box-sizing: border-box;
-            display: block;
-            width: 60%;
-            border: 3px solid white;
-            padding: calc(1rem * 1.5) 1rem;
-            color: black;
-            background: white;
-            border-radius: 4px;
-            min-height: 120px;
-                &:focus,
-                &:not(:placeholder-shown) {
-                & + .textarea__label {
-                    transform: translate(0rem, -135%) scale(120%);
-                    color: white;
-
-                }
-            }
-        }
-    }
-
-    .input {
-        &__label {
-            position: absolute;
-        }
-
-        &__field {
-            box-sizing: border-box;
-            display: block;
-            width: 60%;
-            border: 3px solid white;
-            padding: calc(1rem * 1.5) 1rem;
-            color: black;
-            background: white;
-            border-radius: 4px;
-            min-height: 120px;
-                &:focus,
-                &:not(:placeholder-shown) {
-                & + .textarea__label {
-                    transform: translate(0rem, -135%) scale(120%);
-                    color: white;
-
-                }
-            }
-        }
     }
 }
 
