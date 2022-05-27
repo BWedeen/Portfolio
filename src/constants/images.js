@@ -26,8 +26,7 @@ import ProjectImage2 from '../assets/portfolio2.png';
 import ProjectImage3 from '../assets/portfolio3.png';
 import ProjectImage4 from '../assets/portfolio4.png';
 
-
-export default {
+const imageExport = {
   stars,
   mountainsBack,
   mountainsFront,
@@ -52,3 +51,5 @@ export default {
   ProjectImage3,
   ProjectImage4,
 };
+
+export default imageExport;
