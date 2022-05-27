@@ -130,7 +130,7 @@ const About = () => {
           <motion.div 
           animate = {animationSubtext1}>
             <p>
-              Hello! My name is Ben Wedeen and I am a full stack developer from Los Angeles, California with a bachelors degree in Computer Science from the University of Colorado, Boulder. 
+              Hello! My name is Ben Wedeen and I am a <b>full stack developer</b> from Los Angeles, California with a <b>bachelors degree in Computer Science from the University of Colorado, Boulder</b>. 
             </p>
           </motion.div>
           <motion.div 

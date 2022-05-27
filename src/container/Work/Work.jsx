@@ -160,7 +160,7 @@ const Work = () => {
               <h2>Spotify Advanced Search </h2>
               <p>Spotify Advanced Search is a web app that allows users to generate songs based on song characteristics such as Acousticness, Energy, Valence - and more.</p>
               <p>Spotify Advanced Search was built using React, Spotify API, NodeJS and utilized a MongoDB database set up by teammates to keep track of user information.</p>
-              <a href="" className="btn" target="_blank">View Code</a>
+              <a href="https://github.com/Larjun/Advanced-Spotify-Search" className="btn" target="_blank">View Code</a>
             </div>
           </article>
         </motion.div>
@@ -174,7 +174,7 @@ const Work = () => {
               <h2>Covid Simulator</h2>
               <p>This project builds on an existing virus outbreak simulation to simulate the spread of COVID, introducing new factors to simulate the introduction of COVID-19 into a small population.</p>
               <p>This was done as a final research project for a class that handled the dynamic modelling of naturally occuring events. Made in Python with libraries such as Pandas, MatPlotLib and Mesa. </p>
-              <a href="" className="btn" target="_blank">View Code</a>
+              <a href="https://github.com/BWedeen/COVID-Simulator" className="btn" target="_blank">View Code</a>
             </div>
           </article>
         </motion.div>
