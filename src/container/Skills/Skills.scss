@@ -8,7 +8,6 @@
     position: relative;
     padding: 120px;
     min-height: 810px;
-    
     .app__skills-text {
 
         padding-left: 4rem;
@@ -58,7 +57,6 @@
     .skills__item-image {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-
         image-resolution: 100%;
         margin: 0 auto;
         max-width: 60%;
@@ -71,6 +69,7 @@
 
 .app__skills__container {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 2fr);
     gap: 65px;
     padding-top: 60px;
@@ -78,11 +77,9 @@
 
 
 .skills__item {
-    
     min-height: 300px;;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background: linear-gradient(rgb(65, 58, 141),rgb(46, 34, 100));
     padding: 1.3rem;
     border-radius: 1rem;
@@ -254,14 +251,6 @@ $arrow-line-width: 4px;
             padding-left: 5px;
             flex-direction: row;
         }
-    }
-}
-
-
-
-@media screen and (min-width: 2000px){
-    .app__skills__container {
-        max-width:2050px;
     }
 }
 

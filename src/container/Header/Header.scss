@@ -9,9 +9,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
-    
     background: linear-gradient(rgb(5, 3, 33),rgb(143, 23, 255));
+    
     img {
         position: absolute;
         top: 0;
@@ -32,6 +31,7 @@
     
 }
 
+/*Styling for transition from parallax background to next section*/
 .app__header-parallax::before {
     content: '';
     position: absolute;
@@ -42,6 +42,7 @@
     z-index: 11;
 }
 
+/* Image styling */
 .stars{
     width: 50%;
     height: 50%;
@@ -57,6 +58,24 @@
     z-index: 4;
 }
 
+/* Text styling */
+.text {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    color: var(--white-color);
+    white-space: nowrap;
+    font-size: 50px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.493);
+    z-index: 3;
+    
+    margin-bottom: 300px;
+
+    @media screen and (max-width: 900px) {
+        margin-bottom: 300px;
+        font-size: 5.5vw;
+        
+    }
+}
 
 .subtext {
     font-family: 'Press Start 2P', cursive;
@@ -76,33 +95,7 @@
     }
 }
 
-.text {
-    font-family: 'Press Start 2P', cursive;
-    position: absolute;
-    color: var(--white-color);
-    white-space: nowrap;
-    font-size: 50px;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.493);
-    z-index: 3;
-    
-    margin-bottom: 300px;
-
-    @media screen and (max-width: 900px) {
-        margin-bottom: 300px;
-        font-size: 5.5vw;
-        
-    }
-}
-
-@keyframes color {
-    0%   { color: rgb(123, 66, 255); }
-    20%  { color: #3da1ffd6; }
-    40%  { color: #4b9cff; }
-    50%  { color: #8b3dffd6; }
-    80%  { color: #5898ff; }
-    100% { color: rgb(123, 66, 255); }
-  }
-
+/* Button styling */
 .button {
   margin-top: 160px;
   animation: fadeInDown;

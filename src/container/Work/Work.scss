@@ -4,7 +4,6 @@
 }
 .app__work {
     padding: 120px;
-    
     padding-bottom: 8rem;
     overflow: hidden;
     min-height: 1300px;
@@ -199,8 +198,8 @@ img{
 }
 
 @media screen and (min-width: 2000px){
-    .app__work__container {
-        max-width:2050px;
+    .work__item img {
+        width: 100%;
     }
 }
 
