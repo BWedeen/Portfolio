@@ -59,7 +59,7 @@
     border: 3px solid transparent;
     border-color: rgba(243, 243, 243, 0.833);
     transition: all 0.2s ease-in-out;
-
+    text-align: center;
     .work__item-text {
         padding-left: 8px;
         padding-right: 8px;
@@ -72,13 +72,14 @@
     }
 
     h2 {
+        text-align: left;
         margin-top: 10px;
         margin-bottom: 5px;
         color: white;
-        
     }
 
     p {
+        text-align: left;
         padding-top: 10px;
         color: rgb(212, 212, 212);
         
