@@ -184,7 +184,7 @@ const Work = () => {
             <div className="work__item-text">
               <h2>Covid Simulator</h2>
               <p>This project builds on an existing virus outbreak simulation to simulate the spread of COVID, introducing new factors to simulate the introduction of COVID-19 into a small population.</p>
-              <p>This was done as a final research project for a class that handled the modeling of naturally occuring events. Made in Python with libraries such as Pandas, MatPlotLib and Mesa. </p>
+              <p>This was done as a final research project for a class that handled the modeling of naturally occurring events. Made in Python with libraries such as Pandas, MatPlotLib and Mesa. </p>
               <a href="https://github.com/BWedeen/COVID-Simulator" className="btn" target="_blank" rel="noreferrer">View Code</a>
             </div>
           </article>
