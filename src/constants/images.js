@@ -21,6 +21,7 @@ import sass from '../assets/sass.png';
 
 import nameLogo from '../assets/nameLogo.png';
 
+import ProjectImage0 from '../assets/portfolio0.png';
 import ProjectImage1 from '../assets/portfolio1.png';
 import ProjectImage2 from '../assets/portfolio2.png';
 import ProjectImage3 from '../assets/portfolio3.png';
@@ -46,6 +47,7 @@ const imageExport = {
   react,
   sass,
   nameLogo,
+  ProjectImage0,
   ProjectImage1,
   ProjectImage2,
   ProjectImage3,

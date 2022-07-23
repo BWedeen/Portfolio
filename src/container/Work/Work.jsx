@@ -122,22 +122,34 @@ const Work = () => {
         </motion.div>
       </div>
       <div className ="app__work__container">
-        <motion.div 
-        animate = {animationProject1}>
+        <motion.div animate = {animationProject1}>
+          <article className='work__item'>
+            <div className="work__item-image">
+              <img src={images.ProjectImage0} alt="Crypto Pub homepage"/>
+            </div>
+            <div className="work__item-text">
+              <h2>Crypto Pub</h2>
+              <p>Crypto Pub is a fully responsive web application that gives users detailed information on all cryptocurrencies, and allows them to add any crypto to their personal watchlist.</p>
+              <p>This was a personal passion project I created using React and Coingecko's API for frontend processes, as well as Google's Firebase for the backend database to store user info.</p>
+              <a href="https://cryptopub.netlify.app/" className="btn" target="_blank" rel="noreferrer" style={{marginRight: "20px"}}>Live Site</a>
+              <a href="https://github.com/BWedeen/crypto-pub" className="btn" target="_blank" rel="noreferrer">View Code</a>
+            </div>
+          </article>
+        </motion.div>
+        <motion.div animate = {animationProject2}>
           <article className='work__item'>
             <div className="work__item-image">
               <img src={images.ProjectImage1} alt="Collatz homepage"/>
             </div>
             <div className="work__item-text">
               <h2>Collatz</h2>
-              <p>Collatz is a travel recommendation web app that gives users attractions, hotels, flights and more - based on a desired location, set budget and other user specifications.</p>
+              <p>Collatz is a fully responsive travel recommendation web app that gives users attractions, hotels, flights and more - based on a desired location, set budget and other user specifications.</p>
               <p>I built the frontend with React, using Google API for tracking users. The backend was written by a team of graduate students in Python, using several popular REST APIs to gather data.</p>
               <a href="https://github.com/CUBigDataClass/Collatz" className="btn" target="_blank" rel="noreferrer">View Code</a>
             </div>
           </article>
         </motion.div>
-        <motion.div 
-        animate = {animationProject2}>
+        <motion.div animate = {animationProject3}>
           <article className='work__item'>
             <div className="work__item-image">
               <img src={images.ProjectImage3} alt="412 Motorsport homepage"/>
@@ -164,8 +176,7 @@ const Work = () => {
             </div>
           </article>
         </motion.div>
-        <motion.div 
-        animate = {animationProject4}>
+        <motion.div animate = {animationProject4}>
           <article className='work__item'>
             <div className="work__item-image">
               <img src={images.ProjectImage2} alt="Covid Simulator graphs"/>
@@ -182,8 +193,7 @@ const Work = () => {
       <br></br>
       <br></br>
       <br></br>
-      <motion.div 
-      animate= {animationArrow}>
+      <motion.div animate= {animationArrow}>
         <a href="#skills" class="arrow-container" alt="Go to skills section">
           <div class="arrow"></div>
           <div class="arrow"></div>
