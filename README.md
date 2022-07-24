@@ -1,5 +1,5 @@
 # Personal Portfolio
-This is the code for my personal portfolio. I built this project to showcase my love for developing software and cool UI/UX.
+This is the code for my personal portfolio. I built this project to showcase my passion for developing software and cool UI/UX.
 
 # ![appPreview](appPreview.png)
 
