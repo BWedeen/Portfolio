@@ -136,8 +136,8 @@ const About = () => {
           <motion.div 
           animate = {animationSubtext2}>
             <p>
-              I enjoy the challenge of creating intuitive & useful applications with the newest tools and technology. 
-              I coded this portfolio to showcase my favorite projects as well as my passion for creating interesting software.
+              I am a problem-solver with a strong entrepreneurial mindset. I enjoy the challenge of creating intuitive applications and software that solve any and all kinds of problems. 
+              I created this portfolio from scratch using my knowledge of front end design to showcase my favorite projects as well as my passion for creating beautiful code.
             </p>
           </motion.div>
           <motion.div 

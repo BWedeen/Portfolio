@@ -131,8 +131,9 @@ const Work = () => {
               <h2>Crypto Pub</h2>
               <p>Crypto Pub is a fully responsive web application that gives users detailed information on all cryptocurrencies, and allows them to add any crypto to their personal watchlist.</p>
               <p>This was a personal passion project I created using React and Coingecko's API for frontend processes, as well as Google's Firebase for the backend database to store user info.</p>
-              <a href="https://cryptopub.netlify.app/" className="btn" target="_blank" rel="noreferrer" style={{marginRight: "20px"}}>Live Site</a>
-              <a href="https://github.com/BWedeen/crypto-pub" className="btn" target="_blank" rel="noreferrer">View Code</a>
+              <p>With this project, I learned more about managing global states throughtout React apps, as well as how to use Google Firebase to create an easy-to-start backend capable of storing any user information I want.</p>
+              <a href="https://cryptopub.netlify.app/" className="btn" target="_blank" rel="noreferrer" >Live Site</a>
+              <a href="https://github.com/BWedeen/crypto-pub" className="btn" target="_blank" rel="noreferrer" style={{marginLeft: "10px"}}>View Code</a>
             </div>
           </article>
         </motion.div>
@@ -143,8 +144,9 @@ const Work = () => {
             </div>
             <div className="work__item-text">
               <h2>Collatz</h2>
-              <p>Collatz is a fully responsive travel recommendation web app that gives users attractions, hotels, flights and more - based on a desired location, set budget and other user specifications.</p>
+              <p>Collatz is a desktop and mobile travel recommendation web app that gives users attractions, hotels, flights and more - based on a desired location, set budget and other user specifications.</p>
               <p>I built the frontend with React, using Google API for tracking users. The backend was written by a team of graduate students in Python, using several popular REST APIs to gather data.</p>
+              <p>From this project, I learned a lot about how APIs work, as we created our own custom API to feed our application data. Additionally, I learned how to efficiently create user authentication through Google APIs.</p>
               <a href="https://github.com/CUBigDataClass/Collatz" className="btn" target="_blank" rel="noreferrer">View Code</a>
             </div>
           </article>
@@ -158,6 +160,7 @@ const Work = () => {
               <h2>412 Motorsport</h2>
               <p>412 Motorsport is an autoshop based in Los Angeles, California. I became friends with the owner of the shop, and ended up building his business a new online shop for ecommerce.</p>
               <p>The store was built and hosted using Shopify. This website is still live and I do occasional updates on it for the owner.</p>
+              <p>Though this project did involve some basic coding in JavaScript, I learned a lot about the many layers of running a successful online bussiness when undertaking this project. I became much more familiar with SEO, user experience and online marketing through massive social media platforms.</p>
               <a href="https://412motorsport.com/" className="btn" target="_blank" rel="noreferrer">View Site</a>
             </div>
           </article>
