@@ -114,7 +114,7 @@ const About = () => {
   }, [inView, animationHeader, animationSubtext1, animationSubtext2, animationSubtext3, animationButton, animationArrow]);
 
   const handleResume = () => {
-    window.open("https://i.imgur.com/sL9RnNU.png")
+    window.open("https://i.imgur.com/tolFptK.png")
   }
 
   return (
