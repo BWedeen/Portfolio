@@ -26,6 +26,7 @@ import ProjectImage1 from '../assets/portfolio1.png';
 import ProjectImage2 from '../assets/portfolio2.png';
 import ProjectImage3 from '../assets/portfolio3.png';
 import ProjectImage4 from '../assets/portfolio4.png';
+import ProjectImage5 from '../assets/portfolio5.png';
 
 const imageExport = {
   stars,
@@ -52,6 +53,7 @@ const imageExport = {
   ProjectImage2,
   ProjectImage3,
   ProjectImage4,
+  ProjectImage5,
 };
 
 export default imageExport;

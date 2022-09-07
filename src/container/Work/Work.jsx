@@ -158,10 +158,25 @@ const Work = () => {
             </div>
             <div className="work__item-text">
               <h2>412 Motorsport</h2>
-              <p>412 Motorsport is an autoshop based in Los Angeles, California. I became friends with the owner of the shop, and ended up building his business a new online shop for ecommerce.</p>
-              <p>The store was built and hosted using Shopify. This website is still live and I do occasional updates on it for the owner.</p>
-              <p>Though this project did involve some basic coding in JavaScript, I learned a lot about the many layers of running a successful online bussiness when undertaking this project. I became much more familiar with SEO, user experience and online marketing through massive social media platforms.</p>
+              <p>412 Motorsport is an autoshop based in Los Angeles, California. I became friends with the owner of the shop, and ended up working there as a front end developer.</p>
+              <p>This initial store was built and hosted using Shopify, and I am in the process of building them a new online store from the ground up.</p>
+              <p>Though this project did involve JavaScript & Liquid, I learned much more about the many layers of running a successful online bussiness while undertaking this project. I became much more familiar with SEO, user experience and online marketing through massive social media platforms.</p>
               <a href="https://412motorsport.com/" className="btn" target="_blank" rel="noreferrer">View Site</a>
+            </div>
+          </article>
+        </motion.div>
+        <motion.div 
+        animate = {animationProject3}>
+          <article className='work__item'>
+            <div className="work__item-image">
+              <img src={images.ProjectImage5} alt="412 Autobody"/>
+            </div>
+            <div className="work__item-text">
+              <h2>412 Autobody</h2>
+              <p>412 Autobody was created as an extension of 412 Motorsport for advertising autobody services online. It is a simple, fully responsive site that lets users quickly understand the purpose of 412 Autobody as a bussiness, as well as providing relevant contact information.</p>
+              <p></p>
+              <p>I made this site using React, JavaScript/HTML/CSS and libraries like Framer Motion for unique and responsive animations.</p>
+              <a href="https://412autobody.com/" className="btn" target="_blank" rel="noreferrer">View Site</a>
             </div>
           </article>
         </motion.div>
