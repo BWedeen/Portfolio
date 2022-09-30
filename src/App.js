@@ -1,22 +1,22 @@
-import React from 'react';
-import './App.scss';
-import { Header, About, Work, Skills, Contact } from './container';
-import { Navbar } from './components';
+import React from "react";
+import "./App.scss";
+import { Header, About, Work, Skills, Contact } from "./container";
+import { Navbar } from "./components";
 
 //Credit to upklyak for vector images
 
 const App = () => {
-  return ( 
+  return (
     <div className="app">
       <div class="cursor"></div>
-      <Navbar/>
+      <Navbar />
       <Header />
       <About />
-      <Work/>
+      <Work />
       <Skills />
       <Contact />
     </div>
   );
-}
+};
 
 export default App;

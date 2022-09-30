@@ -1,4 +1,4 @@
-@import 'animate.css';
+@import "animate.css";
 
 /*Scrollbar styling*/
 ::-webkit-scrollbar {
@@ -12,24 +12,24 @@
 
 /*Main app styling*/
 .app {
-    background: rgb(35, 0, 67);
-    font-family: var(--font-base);
-    min-height: 100vh;
+  background: rgb(35, 0, 67);
+  font-family: var(--font-base);
+  min-height: 100vh;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.25rem;
   }
-  
-  .app__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .p-text {
-    font-size: 0.8rem;
-    text-align: left;
-    color: var(--gray-color);
-    line-height: 1.5;
-  
-    @media screen and (min-width: 2000px) {
-      font-size: 1.25rem;
-    }
-  }
+}

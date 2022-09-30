@@ -1,304 +1,306 @@
 .app__about-container {
-    flex-direction: column;
-    background: linear-gradient(#050321,#230043);
+  flex-direction: column;
+  background: linear-gradient(#050321, #230043);
 }
 .app__about {
-    overflow: hidden;
-    position: relative;
-    padding: 120px;
-    
-    transform: translateY(10px);
-    .app__about-text{
-        width: 50%;
-        padding-left: 4rem;
+  overflow: hidden;
+  position: relative;
+  padding: 120px;
+
+  transform: translateY(10px);
+  .app__about-text {
+    width: 50%;
+    padding-left: 4rem;
+  }
+
+  h1 {
+    z-index: 12;
+    color: rgb(251, 251, 251);
+    font-size: 90px;
+    margin-bottom: 3rem;
+    width: 90%;
+
+    &::before {
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      font-size: 30px;
+      position: absolute;
+      margin-top: -21px;
+      left: -2rem;
+      opacity: 0.6;
     }
 
-    h1{
-        z-index:12;
-        color: rgb(251, 251, 251);
-        font-size: 90px;
-        margin-bottom: 3rem;
-        width: 90%;
-        
-        
-        &::before{
-            content: '<h1>';
-            font-family: 'La Belle Aurore'; 
-            font-size: 30px;
-            position: absolute;
-            margin-top: -21px;
-            left: -2rem;
-            opacity: 0.6;
-        }
-
-        &::after{
-            content: '<h1>';
-            font-family: 'La Belle Aurore'; 
-            font-size: 30px;
-            position: absolute;
-            margin-top: 100px;
-            left: -2rem;
-            opacity: 0.6;
-        }
+    &::after {
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      font-size: 30px;
+      position: absolute;
+      margin-top: 100px;
+      left: -2rem;
+      opacity: 0.6;
     }
+  }
 
-    p {
-        margin-top: 30px;
-        font-size: 1rem;
-        color: white;
-        line-height: 30px;
-    }
+  p {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: white;
+    line-height: 30px;
+  }
 }
 
 /* Rotating cube object container*/
 .stage-cube-cont {
-    width: 50%;
-    height: 100%;
-    top: 0;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
 }
 
 /* Move icons into 3D space, animate the cube*/
 .cubespinner {
-    animation-name: spincube;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 13s;
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0;
-    margin-left: calc(50% - 100px);
-    margin-top: -3rem;
-    div {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border: 1px solid #ccc;
-        background: rgba(255,255, 255, 0.4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 6px 0px rgb(143, 148, 255);
-        font-size: 100px;
-    }
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 13s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px);
+  margin-top: -3rem;
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px 0px rgb(143, 148, 255);
+    font-size: 100px;
+  }
 
-    .face1{
-        transform: translateZ(100px);
-    }
-    .face2{
-        transform: rotateY(90deg) translateZ(100px);
-    }
-    .face3{
-        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    }
-    .face4{
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face5{
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face6{
-        transform: rotateX(-90deg) translateZ(100px);
-    }
+  .face1 {
+    transform: translateZ(100px);
+  }
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
 }
 
 @keyframes spincube {
-    from,
-    to {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    16% {
-        transform: rotateY(-90deg);
-    }
-    33% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-    }
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-    }
-    66% {
-        transform: rotateY(-270deg) rotateZ(90deg);
-    }
-    83% {
-        transform: rotateX(90deg);
-    }
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
 }
 
 .button-resume {
-    margin-top: 40px;
-    align-items: center;
-    appearance: none;
-    background-color: #FCFCFD;
-    border-radius: 4px;
-    border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #36395A;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: 'Press Start 2P', cursive;
-    height: 48px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
-    font-size: 15px;
+  margin-top: 40px;
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Press Start 2P", cursive;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 15px;
 }
 
 .button-resume:focus {
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .button-resume:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    transform: translateY(-2px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
 .button-resume:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
-  $total-arrows: 3;
-  $arrow-line-length: 50px;
-  $arrow-line-width: 4px;
-  
-  // arrow animtion + choose direction
-  @mixin arrow-transitions($rot: 0deg) {
-    transform: translate(-50%, -50%) rotateZ($rot);
-  }
+$total-arrows: 3;
+$arrow-line-length: 50px;
+$arrow-line-width: 4px;
 
-  // arrows
-  .arrow-container {
+// arrow animtion + choose direction
+@mixin arrow-transitions($rot: 0deg) {
+  transform: translate(-50%, -50%) rotateZ($rot);
+}
+
+// arrows
+.arrow-container {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+  transform: translateY(-90px);
+  @include arrow-transitions(0deg);
+  &:hover {
+    cursor: pointer;
+    .arrow {
+      top: 50%;
+      &:before {
+        @include arrow-transitions(-30deg);
+      }
+      &:after {
+        @include arrow-transitions(30deg);
+      }
+    }
+  }
+}
+.arrow {
+  left: 50%;
+  position: absolute;
+  transition: all 0.4s ease;
+  &:before,
+  &:after {
+    transition: all 0.4s ease;
+    content: "";
     display: block;
-    width: 100px;
-    height: 100px;  
-    position: relative;
-    
-    transform: translateY(-90px);
-    @include arrow-transitions(0deg);
-    &:hover {
-      cursor: pointer;
-      .arrow {
-        top: 50%;
-        &:before {
-          @include arrow-transitions(-30deg);
-        }
-        &:after {
-          @include arrow-transitions(30deg);
-        }      
-      }
-    }
-  }
-  .arrow {
-    left: 50%;
     position: absolute;
-    transition: all .4s ease;
-    &:before,
-    &:after {
-      transition: all .4s ease;
-      content: '';
-      display: block;
-      position: absolute;
-      transform-origin: bottom right;
-      background: #fff;
-      width: $arrow-line-width;
-      height: $arrow-line-length;
-      border-radius: 10px;
-      transform: translate(-50%, -50%) rotateZ(-45deg);
-    }
-    &:after {
-      transform-origin: bottom left;
-      transform: translate(-50%, -50%) rotateZ(45deg);
-    }
-    @for $i from 1 through $total-arrows {
-      &:nth-child(#{$i}) {
-        opacity: 0.3 * $i;
-        top: 15 + (100% * $i/5);
-      }
+    transform-origin: bottom right;
+    background: #fff;
+    width: $arrow-line-width;
+    height: $arrow-line-length;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
+  &:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  @for $i from 1 through $total-arrows {
+    &:nth-child(#{$i}) {
+      opacity: 0.3 * $i;
+      top: 15 + (100% * $i/5);
     }
   }
+}
 
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
 
 @media screen and (max-width: 1300px) {
-    .app__about {
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        min-height: 1200px;
-        .app__about-text{
-            padding-left: 2rem;;
-            width: 100%
-        }
-    
-        h1{
-            padding-top: 100px;
-            font-size: 40px;
-            
-            &::before{
-                font-size: 20px;
-                margin-top: -30px;
-                left: -1.1rem;
-            }
-    
-            &::after{
-                font-size: 20px;
-                margin-top: 52px;
-                left: -1.1rem;
-            }
-        }
-    
-        p {
-            margin-top: 40px;
-            font-size: 13px;
-            line-height: 30px;
-        }
+  .app__about {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 1200px;
+    .app__about-text {
+      padding-left: 2rem;
+      width: 100%;
     }
-    
-    .stage-cube-cont {
-        width: 100%;
-        position: relative;
-        overflow: visible;
-        right: 0;
-        margin-left: 0;
-        margin-top: 0rem;
+
+    h1 {
+      padding-top: 100px;
+      font-size: 40px;
+
+      &::before {
+        font-size: 20px;
+        margin-top: -30px;
+        left: -1.1rem;
+      }
+
+      &::after {
+        font-size: 20px;
+        margin-top: 52px;
+        left: -1.1rem;
+      }
     }
-    
-    .cubespinner {
-        margin-top: 2rem;
+
+    p {
+      margin-top: 40px;
+      font-size: 13px;
+      line-height: 30px;
     }
+  }
+
+  .stage-cube-cont {
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    right: 0;
+    margin-left: 0;
+    margin-top: 0rem;
+  }
+
+  .cubespinner {
+    margin-top: 2rem;
+  }
 }
 
-@media screen and (min-width: 2000px){
-    .stage-cube-cont {
-        transform: scale(140%);
-        margin-top: -130px;
-    }
+@media screen and (min-width: 2000px) {
+  .stage-cube-cont {
+    transform: scale(140%);
+    margin-top: -130px;
+  }
 }
