@@ -150,7 +150,7 @@ const About = () => {
   ]);
 
   const handleResume = () => {
-    window.open("https://i.imgur.com/tolFptK.png");
+    window.open("https://imgur.com/a/Crrvsi3");
   };
 
   return (
